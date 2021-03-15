@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2018",
+    "moduleResolution": "node",
+    "strict": true,
+    "types": ["node"],
+    "outDir": "./build"
+  }
+}

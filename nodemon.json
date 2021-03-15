@@ -1,0 +1,12 @@
+{
+    "exec": "ts-node --project tsconfig.json src/index.ts",
+    "watch": [
+        "src"
+    ],
+    "ext": "ts",
+    "env": {
+        "TS_NODE_PRETTY": true,
+        "TS_NODE_FILES": true,
+        "TS_NODE_PROJECT": "tsconfig.json"
+    }
+}
