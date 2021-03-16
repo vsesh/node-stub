@@ -2,5 +2,5 @@
 
 ```sh
 npm ci
-npm run dev
+npm run db:start | npm run dev
 ```

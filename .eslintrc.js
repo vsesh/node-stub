@@ -4,13 +4,12 @@ module.exports = {
         'es2021': true
     },
     'extends': [
-        'eslint:recommended'
+        'eslint:recommended',
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended'
     ],
     'parser': '@typescript-eslint/parser',
     'parserOptions': {
-        'ecmaFeatures': {
-            'jsx': true
-        },
         'ecmaVersion': 12,
         'sourceType': 'module'
     },
@@ -71,7 +70,9 @@ module.exports = {
         'no-redeclare': 2,
         'no-trailing-spaces': 2,
         'no-undef': 2,
-        'no-unused-vars': 2,
+        'no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars-experimental': 'error',
         'no-with': 2,
         'max-depth': [2, 4],
         'max-len': [2, {
