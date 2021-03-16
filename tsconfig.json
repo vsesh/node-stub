@@ -5,6 +5,7 @@
     "moduleResolution": "node",
     "strict": true,
     "types": ["node"],
-    "outDir": "./build"
+    "outDir": "./build",
+    "sourceMap": true
   }
 }

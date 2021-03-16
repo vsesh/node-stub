@@ -15,7 +15,8 @@ export const app = express()
     .use('/v1', v1Router)
     .use((_req: Request, _res: Response, next: NextFunction) =>
         next(Boom.notFound('Endpoint not found')))
-    .use((err: Error, _req: Request, res: Response, _next?: NextFunction) => {
+    // eslint-disable-next-line
+    .use((err: Error, _req: Request, res: Response, _next: NextFunction) => {
         if (Boom.isBoom(err)) {
             sendError(res, err);
         } else {
