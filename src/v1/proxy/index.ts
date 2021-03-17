@@ -12,7 +12,7 @@ export default asyncHandler(
             res.send(json);
         */
         const response = await fetch('https://api.github.com/users/vsesh');
-        // res.write('>>>>>');
+        res.contentType('application/json');
         response.body.pipe(res);
     }
 );
