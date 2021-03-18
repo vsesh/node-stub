@@ -1,13 +1,15 @@
 import {Router} from 'express';
+import * as bodyParser from 'body-parser';
 
-import get from './page/get';
+import post from './documents/post';
 import proxy from './proxy';
 
-const entryURL = '/:page([A-Za-z0-9-_]{1,255})';
-
 const entriesRouter = Router()
-    .get(entryURL, get);
+    .post('/', [
+        bodyParser.json(),
+        post
+    ]);
 
 export default Router()
-    .use('/pages', entriesRouter)
+    .use('/documents', entriesRouter)
     .get('/proxy', proxy);
