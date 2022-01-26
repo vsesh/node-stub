@@ -71,8 +71,7 @@ module.exports = {
         'no-trailing-spaces': 2,
         'no-undef': 2,
         'no-unused-vars': 'off',
-        '@typescript-eslint/no-unused-vars': 'off',
-        '@typescript-eslint/no-unused-vars-experimental': 'error',
+        '@typescript-eslint/no-unused-vars': 'error',
         'no-with': 2,
         'max-depth': [2, 4],
         'max-len': [2, {
